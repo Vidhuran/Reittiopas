@@ -27,7 +27,8 @@ OTHER_FILES += qml/Reittiopas.qml \
     qml/pages/Stops.qml \
     qml/pages/MainPage.qml \
     qml/pages/Lines.qml \
-    qml/pages/Info.qml
+    qml/pages/Info.qml \
+    qml/pages/Map.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

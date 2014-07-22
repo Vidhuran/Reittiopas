@@ -53,6 +53,7 @@ Page {
                 id: dateTime
                 spacing: Theme.paddingLarge
                 anchors.horizontalCenter: parent.horizontalCenter
+                width: page.width
 
                 ValueButton {
                     id: datePicker
@@ -96,10 +97,12 @@ Page {
 
                 Button {
                     id: departure
+                    color: Theme.highlightColor
                     text: "Departure"
 
                     onClicked: {
-                        arrival.down = false;
+                        arrival.color = Theme.primaryColor
+                        departure.color = Theme.highlightColor
                     }
                 }
 
@@ -108,7 +111,8 @@ Page {
                     text: "Arrival"
 
                     onClicked: {
-                        departure.down = false;
+                        departure.color = Theme.primaryColor
+                        arrival.color = Theme.highlightColor
                     }
                 }
             }
@@ -116,6 +120,48 @@ Page {
                 id: search
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Search"
+            }
+            Row {
+                id: transportMode
+                spacing: Theme.itemSizeSmall
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: page.width
+                Row {
+                    width: parent.width
+                    Switch {
+                        icon.source: "image://theme/icon-s-developer"
+                    }
+                    Switch {
+                        icon.source: "image://theme/icon-s-jolla"
+                    }
+                    Switch {
+                        icon.source: "image://theme/icon-s-like"
+                    }
+                    Switch {
+                        icon.source: "image://theme/icon-s-service-owncloud"
+                    }
+                    Switch {
+                        icon.source: "image://theme/icon-s-sailfish"
+                    }
+                }
+                Row {
+                    width:parent.width
+                    Label {
+                        text: "Bus"
+                    }
+                    Label {
+                        text: "Tram"
+                    }
+                    Label {
+                        text: "Metro"
+                    }
+                    Label {
+                        text: "Train"
+                    }
+                    Label {
+                        text: "Cycle"
+                    }
+                }
             }
         }
     }
