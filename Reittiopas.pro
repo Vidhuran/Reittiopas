@@ -14,6 +14,8 @@ TARGET = Reittiopas
 
 CONFIG += sailfishapp
 
+QT += location
+
 SOURCES += src/Reittiopas.cpp
 
 OTHER_FILES += qml/Reittiopas.qml \
@@ -28,7 +30,7 @@ OTHER_FILES += qml/Reittiopas.qml \
     qml/pages/MainPage.qml \
     qml/pages/Lines.qml \
     qml/pages/Info.qml \
-    qml/pages/Map.qml
+    qml/pages/MapView.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
