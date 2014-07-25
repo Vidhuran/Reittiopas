@@ -30,6 +30,7 @@ OTHER_FILES += qml/Reittiopas.qml \
     qml/pages/MainPage.qml \
     qml/pages/Lines.qml \
     qml/pages/Info.qml \
+    qml/pages/MapView.qml \
     qml/pages/MapView.qml
 
 # to disable building translations every time, comment out the

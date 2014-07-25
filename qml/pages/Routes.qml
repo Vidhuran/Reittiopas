@@ -121,7 +121,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Search"
 
-                onClicked: pageStack.push(Qt.resolvedUrl("Map.qml"))
+                onClicked: pageStack.push(Qt.resolvedUrl("MapView.qml"))
             }
             Row {
                 id: transportMode
