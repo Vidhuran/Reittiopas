@@ -21,10 +21,17 @@ URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  Reittiopas.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
+Requires:   qt5-plugin-geoservices-nokia
+Requires:   qt5-plugin-geoservices-osm
+Requires:   qt5-qtdeclarative-import-location
+Requires:   qt5-qtdeclarative-import-positioning
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  qt5-qtlocation-devel
+BuildRequires:  qt5-qtpositioning-devel
+BuildRequires:  qt5-qtdeclarative-import-positioning
 BuildRequires:  desktop-file-utils
 
 %description
